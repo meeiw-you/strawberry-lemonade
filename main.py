@@ -7,7 +7,7 @@ import discord
 
 
 
-pre = ">>"
+pre = ">"
 intents = discord.Intents.default()
 intents.message_content = True
 
@@ -48,4 +48,4 @@ async def on_message(message):
     if message.content.startswith(pre +"link"):
         await message.channel.send(""" https://discord.com/api/oauth2/authorize?client_id=1041338819200421888&permissions=8&scope=bot , to invite me
 or if you want to come to my server , https://discord.gg/ysFzG4987s""")
-client.run('MTA0MTMzODgxOTIwMDQyMTg4OA.GFLlIs.vYp5kvR8M8kDNISECb2GKF8jE7DcxDRQCWEg5k')#,log_handler=handler, log_level=logging.DEBUG)
+client.run('MTA0MTMzODgxOTIwMDQyMTg4OA.GLt7nO.sTQBJ8RG_OXYW_3ELEo20V_RC2laM4ELUbceI0')#,log_handler=handler, log_level=logging.DEBUG)
