@@ -6,7 +6,7 @@ import discord
 
 
 
-
+sl = "strawberry lemonade"
 pre = ">"
 intents = discord.Intents.default()
 intents.message_content = True
@@ -21,31 +21,148 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
+    if message.content.startswith(pre +"link"):# link
+        await message.channel.send(""" https://discord.com/api/oauth2/authorize?client_id=1041338819200421888&permissions=8&scope=bot , to invite me
+or if you want to come to my server , https://discord.gg/ysFzG4987s.""")
 
-    if message.content.startswith(pre +'h'):
+    if message.content.startswith(pre +'h'):#herkese selam ver
         await message.channel.send('hello everybody!')
 
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
-
-    if message.content.startswith("hi"):
+    if message.content.startswith("hi"):#selam
         await message.channel.send("hello!")
 
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
+    if message.content.startswith(pre +"help"):#>yardım
+        await message.channel.send("i so sorry none.")
 
-    if message.content.startswith(pre +"help"):
-        await message.channel.send("none")
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
+    if message.content.startswith(sl + " how are you"):#çilekli limonata nasılsın
+        await message.channel.send("i very fine. you ?")
 
-    if message.content.startswith(pre +"link"):
-        await message.channel.send(""" https://discord.com/api/oauth2/authorize?client_id=1041338819200421888&permissions=8&scope=bot , to invite me
-or if you want to come to my server , https://discord.gg/ysFzG4987s""")
-client.run('MTA0MTMzODgxOTIwMDQyMTg4OA.GdDs0Y.yhO6cS28SCLhgFR7jANq44juMOcTgFXrftSfeA')#,log_handler=handler, log_level=logging.DEBUG)
+    if message.content.startswith(sl + " help me"):# çilekli limonata yardım et
+        await message.channel.send("i can how help ?")
+
+    if message.content.startswith(sl + " who wrote your software"):#cilekli limonatayi kim yazdı
+        await message.channel.send("""discord name: 'meiw you'#2200
+        , github name: meeiw-you
+        , github profil link: https://github.com/meeiw-you
+        , discord server: https://discord.gg/ysFzG4987s""")
+
+    if message.content.startswith(sl +" open new page"):#yeni sayfa
+        await message.channel.send("""...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        """)
+
+client.run('MTA0MTMzODgxOTIwMDQyMTg4OA.GFBstl.bXwU5GQsw0nrM7zezhFeiJSX9Lh6OZzAhqPd5g')#,log_handler=handler, log_level=logging.DEBUG)
