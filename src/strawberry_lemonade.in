@@ -1,0 +1,11 @@
+#!@PYTHON@
+
+
+import sys
+
+pkgdatadir = '@pkgdatadir@'
+sys.path.insert(1, pkgdatadir)
+
+if __name__ == '__main__':
+    from strawberry_lemonade import main
+    sys.exit(main.main(sys.argv))
